@@ -1,45 +1,102 @@
 /* Navbar */
-ul.navbar {
-  list-style-type: none;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #8e3c8e;
+.navbar {
+	background-color: #8E3C8E;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.75);
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
-ul.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 25px 16px;
-  text-decoration: none;
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
 }
-ul.navbar li a:hover:not(.mylogo) {
+.navbar li {
+    float: left;
+}
+.navbar li a {
+	color: #EEEEEE;
+	display: block;
+	padding: 25px 16px;
+	border-left: 1px solid #9F5C9F;
+	text-decoration: none;
+}
+.navbar li a:hover:not(.mylogo) {
 	background-color: #000001;
-	}
-ul.navbar li {
+}
+.logo {
+	cursor: pointer;
+	display: block;
 	float: left;
-	}
-ul.navbar li.right {
-	float: right;
-	}
-ul.navbar li.left {
-	/* Fix for logo */
+	padding: 18px 25px;
+	text-decoration: none;
 	max-height: 68px;
-	}
+}
+.navbar .menu {
+    float: right;
+    max-height: none;
+ }
+
+/* Menu Icon */
+.navbar .menu-btn {
+	display: none;
+}
+.navbar .menu-icon {
+	cursor: pointer;
+	display: none;
+	float: right;
+	padding: 38px 20px;
+	position: relative;
+}
+.navbar .menu-icon .navicon {
+	background: #EEEEEE;
+	display: block;
+	height: 3px;
+	width: 25px;
+	position: relative;
+}
+.navbar .menu-icon .navicon:before {
+	top: 8px;
+}
+.navbar .menu-icon .navicon:after {
+	top: -8px;
+}
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+	background: #EEEEEE;
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.navbar .menu-btn:checked ~ .menu {
+	max-height: 250px;
+}
 
 /* Mobile Version */
 @media screen and (max-width: 1081px) {
-	ul.navbar li.right,
-	ul.navbar li {
+	.navbar li.right,
+	.navbar li {
 		float: none;
+		border-left: none;
+		border-top: 1px solid #9F5C9F;
+	}
+	.navbar .menu {
+		clear: both;
+		float: none;
+		text-align: center;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+	}
+	.navbar .menu-icon {
+		display: initial;
 	}
 	.logo {
 		height: 45px;
 	}
-	ul.navbar li.left{
-		max-height: none;
-	}
+	
   	iframe {
 		width: 100%
 	}
@@ -51,7 +108,8 @@ ul.navbar li.left {
 
 /* Body & Text */
 body {
-	font-family:Arial, Helvetica, sans-serif; 
+	font-family:"Arial"; 
+	font-weight:600; 
 	font-stretch:condensed;
 	margin: 0;
 }

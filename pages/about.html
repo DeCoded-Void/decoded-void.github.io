@@ -55,12 +55,16 @@
 
 	<link rel="stylesheet" href="../style.css">
 	
-	<ul class="navbar">
-		<li class="left"><a class="mylogo"><img src="../resources/logo.png" alt="VOID" height="20" class="logo" onclick="window.location.href='http://www.decodedvoid.com'"></a></li>
-		<li class="right"><a href="../pages/contactme.html">Contact Me</a></li>
-		<li class="right"><a href="../pages/about.html">About</a></li>   
-		<li class="right"><a href="../pages/goodies.html">Goodies</a></li>
-	</ul>
+	<div class="navbar">
+		<a class="mylogo"><img src="../resources/logo.png" alt="VOID" height="30" class="logo" onclick="window.location.href='http://www.decodedvoid.com'"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu">
+			<li class="right"><a href="../pages/contactme.html">Contact Me</a></li>
+			<li class="right"><a href="../pages/about.html">About</a></li>   
+			<li class="right"><a href="../pages/goodies.html">Goodies</a></li>
+		</ul>
+	</div>
 </header>
 
 <body>
