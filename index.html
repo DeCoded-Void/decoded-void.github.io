@@ -17,61 +17,93 @@ Best way to reach me is on discord: Void#1337"/>
 	
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
   
+  <link rel="stylesheet" href="style.css">
+  
   	<style type="text/css">
-		html {
-			background: url("./resources/background.png") no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
 		@media screen and (max-width: 1081px) {
-			.geo_art{
+			.tori_art{
 				width:50%;
 			}
 		}
+		#particles-js{
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  position: fixed;
+		  background-color: #592559;
+		  background: url('./resources/background_alt.png') no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+		#content {
+		  left: 50%;
+		  top: 50%;
+		  -webkit-transform: translate(-50%,-50%);
+		  transform: translate(-50%,-50%);
+		  position: absolute;
+		  text-align: center;
+		}
+		#links a {
+		  padding: 12px;
+		  color: #ffffff;
+		  text-decoration: none;
+		  padding: 12px;
+		}
+		#links a:hover {
+		  text-decoration: underline;
+		  text-decoration-color: white;
+		}
+		h1{
+			text-align: center;
+			-webkit-text-stroke: 2px black;
+			font-size:5em;
+			color: #ffffff;
+			margin:0
+		}
+		u { 
+		  text-decoration: underline;
+		  text-decoration-color: white;
+		}
 	</style>
 
-	<link rel="stylesheet" href="style.css">
-	
-	<div class="navbar">
-		<a class="mylogo"><img src="./resources/logo.png" alt="VOID" height="30" class="logo" onclick="window.location.href='http://www.decodedvoid.com'"></a>
-		<input class="menu-btn" type="checkbox" id="menu-btn" />
-		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-		<ul class="menu">
-			<li class="right"><a href="./pages/contactme">Contact Me</a></li>
-			<li class="right"><a href="./pages/about">About</a></li>   
-			<li class="right"><a href="./pages/goodies">Goodies</a></li>
-		</ul>
-	</div>
 </header>
 
 <body>
-
+	<div id="particles-js"></div>
+	<div id="content">
 	<h1>
 		<br>
-		Welcome to DeCoded_Void's website,
-		<br>
-		the most useless place on the internet.
+		DeCoded_Void's Site
 	</h1>
 	<h4>
-		<br>
-		Look, I know how you got here, you either saw my domain or decided to poke around some of my services.
-		<br>
-		Not sure what your goal here was, so um hi. This was a website created in like an hour for this domain.
-		<br>
-		I bought this domain with the intent to create a bunch of subdomains for gaming servers and url shorteners.
-		<br>
-		Though at this point, it can also be a place to display some content of my choosing as well as other goodies.
-		<br>
-		Best way to reach me is through discord which is found in the Contact Me page.
-		<br>
+		<div id="links">
+			<br>
+			<a href="./pages/about">About Me</a>
+			<a href="./pages/goodies">Goodies</a>
+			<a href="./pages/contactme">Contact Me</a>
+			<a href="https://www.patreon.com/DeCoded_Void">Patreon</a>
+		</div>
 	</h4>
-	
 	<p style="text-align:center;">
-		<img class="geo_art" src="./resources/index/Menacing.png" width="25%">
+		<img class="tori_art" src="./resources/index/Menacing.png" width="40%">
 	</p>
-	
+	<h4>
+		<u>==== Ctyptocurrency Donation Addresses ====</u>
+		<br>
+		BTC: bc1q9ezjzxuehktt5xq70kslgchs4ckvnmwxl2atre
+		<br>
+		ETH: 0xA2457799cdA7f1509390a26A3F81EDA53CB54cE7
+		<br>
+		LTC: LUSXKqoPQg5oN7P714pvh3tw1unwdBQCz9
+		<br>
+		XRP: r4vDYLWw6pRmb2PC1tDR7z5dFtuhq4qLnq
+	</h4>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+	<script src="./resources/index/app.js"></script>
 </body>
 
 </html>
