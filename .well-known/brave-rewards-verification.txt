@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: decodedvoid.com
-Token: 6c45c819f89b8807cad037038812a6e8a50c24a058c3cc258e96ef1faa195ea2
